@@ -1,0 +1,10 @@
+Flask
+requests==2.32.3
+pycryptodome==3.20.0
+protobuf==5.28.2
+google==3.0.0
+Werkzeug==2.0.3
+aiohttp==3.11.11
+httpx==0.28.1
+Pillow==11.1.0
+pyTelegramBotAPI==4.26.0
