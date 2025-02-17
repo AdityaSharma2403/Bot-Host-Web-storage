@@ -24,33 +24,33 @@ def get_player_info(message):
         parts = message.text.split()
 
         if len(parts) < 2:
-            bot.reply_to(message, "❌ ᴜꜱᴀɢᴇ: /ɢᴇᴛ <ʀᴇɢɪᴏɴ> <ᴜɪᴅ>, /ɢᴇᴛ <ᴜɪᴅ>, ɢᴇᴛ <ʀᴇɢɪᴏɴ> <ᴜɪᴅ> ᴏʀ ɢᴇᴛ <ᴜɪᴅ>`", parse_mode="Markdown")
+            bot.reply_to(message, "❌ Usage: /get <region> <uid>, /get <uid>, get <region> <uid> or get <uid>", parse_mode="Markdown")
             return
 
         if len(parts) == 2:  # Only UID provided
             uid = parts[1]
-            fetching_msg = bot.reply_to(message, f"⏳ *ғᴇᴛᴄʜɪɴɢ  `{uid}` ɪɴғᴏ ғᴏʀ ᴀʟʟ ᴠᴀʟɪᴅ ʀᴇɢɪᴏɴs, ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...*", parse_mode="Markdown")
+            fetching_msg = bot.reply_to(message, f"⏳ *Fetching `{uid}` info for all valid regions, please wait...*", parse_mode="Markdown")
             for region in VALID_REGIONS:
                 response = requests.get(INFO_API.format(uid=uid, region=region))
                 if response.status_code == 200 and "AccountInfo" in response.json():
                     bot.delete_message(message.chat.id, fetching_msg.message_id)
                     send_player_info(message, response.json(), uid, region)
                     return
-            bot.edit_message_text("❌ *ɪɴᴠᴀʟɪᴅ ᴜɪᴅ ᴏʀ ɴᴏ ᴠᴀʟɪᴅ ʀᴇɢɪᴏɴ ꜰᴏᴜɴᴅ.*", message.chat.id, fetching_msg.message_id, parse_mode="Markdown")
+            bot.edit_message_text("❌ *Invalid UID or no valid region found.*", message.chat.id, fetching_msg.message_id, parse_mode="Markdown")
 
         elif len(parts) == 3:  # Region and UID provided
             region, uid = parts[1], parts[2]
             if region.lower() not in VALID_REGIONS:
-                bot.reply_to(message, "❌ *ɪɴᴠᴀʟɪᴅ ʀᴇɢɪᴏɴ. ᴜꜱᴇ ᴀ ᴠᴀʟɪᴅ ʀᴇɢɪᴏɴ ʟɪᴋᴇ:* `ɪɴᴅ`, `ꜱɢ`, `ʙʀ`, `ʀᴜ`, ᴇᴛᴄ.*", parse_mode="Markdown")
+                bot.reply_to(message, "❌ *Invalid region. Use a valid region like:* `ind`, `sg`, `br`, `ru`, etc.", parse_mode="Markdown")
                 return
 
-            fetching_msg = bot.reply_to(message, f"⏳ *ꜰᴇᴛᴄʜɪɴɢ `{ᴜɪᴅ}` ɪɴꜰᴏ ꜰᴏʀ ʀᴇɢɪᴏɴ: `{ʀᴇɢɪᴏɴ}`, ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ...*", parse_mode="Markdown")
+            fetching_msg = bot.reply_to(message, f"⏳ *Fetching `{uid}` info for region: `{region}`, please wait...*", parse_mode="Markdown")
             response = requests.get(INFO_API.format(uid=uid, region=region))
             if response.status_code == 200 and "AccountInfo" in response.json():
                 bot.delete_message(message.chat.id, fetching_msg.message_id)
                 send_player_info(message, response.json(), uid, region)
             else:
-                bot.edit_message_text("❌ *ɪɴᴠᴀʟɪᴅ ᴜɪᴅ ᴏʀ ʀᴇɢɪᴏɴ. ᴘʟᴇᴀꜱᴇ ᴛʀʏ ᴀɢᴀɪɴ.*", message.chat.id, fetching_msg.message_id, parse_mode="Markdown")
+                bot.edit_message_text("❌ *Invalid UID or region. Please try again.*", message.chat.id, fetching_msg.message_id, parse_mode="Markdown")
 
     except Exception as e:
         bot.reply_to(message, f"❌ *Error: {str(e)}*", parse_mode="Markdown")
