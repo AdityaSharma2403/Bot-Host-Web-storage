@@ -1,4 +1,2 @@
---- Activity for Aditya ---
-2025-02-18 10:52:17 - Uploaded file main.py.
 --- Activity for U ---
-2025-02-18 10:53:00 - Created file B.py.
+2025-02-18 10:53:06 - Started bot B.py.
