@@ -1,2 +1,2 @@
 --- Activity for Aditya ---
-2025-02-18 22:28:43 - Uploaded file app (6).py.
+2025-02-18 17:02:13 - New user registered and logged in.
