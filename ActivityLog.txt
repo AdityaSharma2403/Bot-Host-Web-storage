@@ -1,7 +1,2 @@
---- Activity for Aditya ---
-2025-02-18 13:42:38 - Logged in successfully.
 --- Activity for Bajrangyt11 ---
-2025-02-18 13:42:43 - Started bot Iro.py
-2025-02-18 13:42:47 - Started bot Iro.py
-2025-02-18 13:42:50 - Started bot Iro.py
-2025-02-18 13:42:52 - Started bot Iro.py
+2025-02-18 13:42:58 - Restarted bot Iro.py
