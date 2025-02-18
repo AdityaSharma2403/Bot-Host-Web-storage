@@ -297,7 +297,7 @@ import requests
 API_URL = "https://vstech.serv00.net/freeapi.php?uid={uid}&region=ind&key=narayan"
 
 # Like command handler – works for both "/like {uid}" and "like {uid}"
-@bot.message_handler(func=lambda message: message.text and message.text.lower().startswith(("/like", "like")))
+@bot.message_handler(func=lambda message: message.text and message.text.lower().startswith(("/lishke", "lijdke")))
 def like_command(message):
     parts = message.text.split()
     if len(parts) != 2:
