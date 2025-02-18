@@ -1,5 +1,2 @@
---- Activity for MOHD AAQIB ---
-2025-02-18 12:57:25 - Logged in successfully.
-2025-02-18 12:58:00 - Uploaded file data.py.
 --- Activity for Aditya ---
-2025-02-18 12:58:37 - Logged in successfully.
+2025-02-18 12:58:41 - Started bot main.py.
