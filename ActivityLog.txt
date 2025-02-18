@@ -1,5 +1,2 @@
 --- Activity for PikaApis ---
-2025-02-18 13:52:13 - Started bot Bot.py
-2025-02-18 13:52:41 - Renamed file Bot.py to main.py.
---- Activity for MARCO ---
-2025-02-18 13:52:36 - Uploaded file INSTAGRAM INFO EK DAM COMPLETE WO BHI FORMAT ME.py.
+2025-02-18 13:53:14 - Started bot main.py
