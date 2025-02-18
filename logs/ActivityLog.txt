@@ -1,5 +1,2 @@
 --- Activity for Aditya ---
-2025-02-19 00:00:21 - Resuming active bot main (1).py after restart.
-2025-02-19 00:00:34 - Restarting bot main (1).py
-2025-02-19 00:00:40 - Restarted bot main (1).py
-2025-02-19 00:00:50 - Stopped bot main (1).py
+2025-02-19 00:04:55 - Logged in successfully.
