@@ -1,5 +1,8 @@
 --- Activity for MOHD AAQIB ---
 2025-02-18 12:36:37 - Logged in successfully.
-2025-02-18 12:36:49 - Deleted file bot.php.
-2025-02-18 12:40:42 - Logged in successfully.
-2025-02-18 12:41:47 - Restarted bot bot.php.
+2025-02-18 12:37:01 - Uploaded file bot.php.
+2025-02-18 12:37:22 - Restarted bot bot.php.
+2025-02-18 12:38:04 - Stopped bot bot.php.
+2025-02-18 12:41:08 - Started bot bot.php.
+--- Activity for Aditya ---
+2025-02-18 12:42:27 - Logged in successfully.
