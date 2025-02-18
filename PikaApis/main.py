@@ -1,8 +1,18 @@
-import telebot
-import yt_dlp
-import io
+import os
+import sys
+
+# Automatically install required modules
+try:
+    import telebot
+    import yt_dlp
+    import io
+except ImportError:
+    os.system(f"{sys.executable} -m pip install --upgrade pip")
+    os.system(f"{sys.executable} -m pip install pyTelegramBotAPI yt-dlp")
+    os.execl(sys.executable, sys.executable, *sys.argv)  # Restart script after installing
 
 TOKEN = "7851168491:AAElhmwJjBhWbEI3OQo0UAnilCMt_9hfBMI"
+
 bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
