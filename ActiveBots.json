@@ -4,5 +4,7 @@
     ],
     "Bajrangyt11": [],
     "MARCO": [],
-    "PikaApis": []
+    "PikaApis": [
+        "Bot.py"
+    ]
 }
