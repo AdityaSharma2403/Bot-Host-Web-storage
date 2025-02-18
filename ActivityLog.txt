@@ -1,12 +1,2 @@
 --- Activity for Aditya ---
-2025-02-18 15:44:57 - Logged in successfully.
-2025-02-18 15:44:59 - Logged in successfully.
-2025-02-18 15:45:05 - Logged out.
-2025-02-18 15:45:20 - Logged in successfully.
-2025-02-18 15:45:25 - Logged out.
-2025-02-18 15:45:30 - Logged in successfully.
-2025-02-18 15:45:35 - Started bot god.py.
-2025-02-18 15:45:38 - Stopped bot god.py.
-2025-02-18 15:45:46 - Started bot main.py.
-2025-02-18 15:45:54 - Logged out.
-2025-02-18 15:46:04 - Logged in successfully.
+2025-02-18 15:48:27 - Logged out.
