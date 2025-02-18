@@ -1,4 +1,2 @@
---- Activity for Aditya ---
-2025-02-18 15:48:39 - Started bot main (1).py
 --- Activity for MARCO ---
-2025-02-18 15:48:49 - Logged in successfully.
+2025-02-18 15:49:10 - Uploaded file INSTAGRAM INFO EK DAM COMPLETE WO BHI FORMAT ME.py.
