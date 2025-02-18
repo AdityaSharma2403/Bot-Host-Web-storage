@@ -1,4 +1,2 @@
---- Activity for Aditya ---
-2025-02-18 12:58:41 - Started bot main.py.
-2025-02-18 12:58:58 - Logged out.
-2025-02-18 12:59:07 - Logged in successfully.
+--- Activity for MOHD AAQIB ---
+2025-02-18 12:59:13 - Restarted bot Adlike.py.
