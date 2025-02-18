@@ -1,2 +1,2 @@
 --- Activity for Aditya ---
-2025-02-18 17:02:13 - New user registered and logged in.
+2025-02-18 17:02:24 - Logged in successfully.
