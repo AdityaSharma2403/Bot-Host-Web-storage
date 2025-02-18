@@ -574,4 +574,4 @@ try:
     print("Bot is running...")
     bot.polling(none_stop=True, timeout=60)
 except Exception as e:
-    print(f"Error: {e}"
+    print(f"Error: {e}")
