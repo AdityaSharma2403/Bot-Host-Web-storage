@@ -1,3 +1,2 @@
---- Activity for Aditya ---
-2025-02-18 10:51:59 - Logged in successfully.
-2025-02-18 10:52:24 - Started bot main.py.
+--- Activity for U ---
+2025-02-18 10:52:30 - New user registered and logged in.
