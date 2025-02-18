@@ -4,7 +4,7 @@ import time
 import httpx
 from datetime import datetime
 
-TOKEN = "8187044195:AAGRyNzMw5uOcNqO1rUb3mZHIVoCXock31I"
+TOKEN = "8187044195:AAExR-MHGmnpTYTLCX_EvNAY2a2GyJl3ePM"
 bot = telebot.TeleBot(TOKEN, parse_mode="Markdown")
 
 # Function to format timestamp
