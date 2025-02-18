@@ -1,0 +1,11 @@
+--- Activity for U ---
+2025-02-18 10:55:10 - Deleted file B.py.
+2025-02-18 10:55:28 - Created file main.py.
+2025-02-18 10:59:54 - Stopped bot main.py.
+--- Activity for User ---
+2025-02-18 11:00:45 - New user registered and logged in.
+2025-02-18 11:01:11 - Uploaded file hack.py.
+2025-02-18 11:01:18 - Started bot hack.py.
+2025-02-18 11:02:15 - Deleted file hack.py.
+--- Activity for Aditya ---
+2025-02-18 11:16:52 - Logged in successfully.
