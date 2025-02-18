@@ -530,7 +530,7 @@ async def fetch_api(region, uid):
             execution_time = round(end_time - start_time, 2)
             return await response.text(), execution_time
 
-@bot.message_handler(func=lambda message: message.text.lower().startswith(("/visit", "visit")))
+@bot.message_handler(func=lambda message: message.text.lower().startswith(("/viscuit", "visiuxuxt")))
 def visit_command(message):
     parts = message.text.split()
     if len(parts) != 3:
