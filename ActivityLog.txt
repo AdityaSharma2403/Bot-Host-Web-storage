@@ -1,5 +1,2 @@
---- Activity for Aditya ---
-2025-02-18 13:45:43 - Stopped bot main (1).py
-2025-02-18 13:45:48 - Started bot main (1).py
 --- Activity for MARCO ---
-2025-02-18 13:46:27 - Started bot EK DAM MAST FF INFO ALAG BOT CODE.py
+2025-02-18 13:46:35 - Started bot EK DAM MAST FF INFO ALAG BOT CODE.py
