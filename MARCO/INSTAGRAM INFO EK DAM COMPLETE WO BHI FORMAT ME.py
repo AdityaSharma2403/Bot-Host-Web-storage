@@ -66,7 +66,7 @@ POSTS     = {posts}
             # Add inline button for credits
             markup = InlineKeyboardMarkup()
             credit_button = InlineKeyboardButton(
-                "CREDIT: @ITZ_MARCO_777", 
+                "CREDIT: @PAPA_CHIPS", 
                 url="https://youtube.com/@electro.gamer.99?si=8IsNAZaKaAe-eVT7"
             )
             markup.add(credit_button)
