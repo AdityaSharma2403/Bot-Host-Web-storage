@@ -1,6 +1,2 @@
 --- Activity for Aditya ---
-2025-02-18 20:47:57 - Resuming active bot main (1).py after restart.
-2025-02-18 20:48:44 - Logged in successfully.
-2025-02-18 20:48:45 - Logged in successfully.
-2025-02-18 20:50:42 - Created file Hhf.
-2025-02-18 20:50:51 - Started bot Hhf
+2025-02-18 20:52:14 - Resuming active bot Hhf after restart.
