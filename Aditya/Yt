@@ -1,6 +1,6 @@
 import telebot
 import yt_dlp
-import io
+import os
 
 TOKEN = "7216995759:AAHp12baiRWQQibUBuPRQj4vtCH15jpbRk4"
 bot = telebot.TeleBot(TOKEN)
@@ -22,23 +22,21 @@ def download_video(message):
     ydl_opts = {
         "format": "bestvideo+bestaudio/best",
         "noplaylist": True,
+        "outtmpl": "downloaded_video.mp4",
         "quiet": True
     }
 
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-            info = ydl.extract_info(url, download=False)
-            video_url = info["url"]
+            info = ydl.extract_info(url, download=True)
             title = info.get("title", "video")
 
-        video_file = io.BytesIO()
-        video_file.name = f"{title}.mp4"
+        # Send the video
+        with open("downloaded_video.mp4", "rb") as video_file:
+            bot.send_video(message.chat.id, video_file, caption=title)
 
-        with yt_dlp.YoutubeDL({"format": "best", "outtmpl": "-", "quiet": True}) as ydl:
-            ydl.download([url])
-
-        bot.send_video(message.chat.id, video_file)
-        video_file.close()
+        # Cleanup the downloaded file
+        os.remove("downloaded_video.mp4")
 
     except Exception as e:
         bot.reply_to(message, f"Error: {str(e)}")
