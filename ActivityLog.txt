@@ -1,9 +1,2 @@
 --- Activity for Aditya ---
-2025-02-18 15:33:58 - Logged out.
-2025-02-18 15:33:59 - Logged out.
-2025-02-18 15:33:59 - Logged out.
-2025-02-18 15:34:00 - Logged out.
-2025-02-18 15:34:00 - Logged out.
-2025-02-18 15:34:00 - Logged out.
-2025-02-18 15:34:00 - Logged out.
-2025-02-18 15:34:00 - Logged out.
+2025-02-18 15:44:57 - Logged in successfully.
