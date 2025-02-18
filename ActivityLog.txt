@@ -1,3 +1,2 @@
 --- Activity for Aditya ---
-2025-02-18 23:32:38 - Uploaded file app (5).py.
-2025-02-18 23:33:58 - Uploaded file newfile.py.
+2025-02-18 23:45:09 - Logged in successfully.
