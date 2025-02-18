@@ -1,6 +1,2 @@
---- Activity for Aditya ---
-2025-02-18 12:09:55 - Uploaded file main.py.
-2025-02-18 12:10:23 - Started bot main.py.
-2025-02-18 12:11:01 - Logged out.
 --- Activity for MOHD AAQIB ---
-2025-02-18 12:17:06 - Logged in successfully.
+2025-02-18 12:18:08 - Uploaded file newfile1.py.
