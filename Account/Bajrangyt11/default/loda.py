@@ -126,7 +126,7 @@ def send_player_info(message, data, uid, region):
 ╰───────────────  
 
 ╭─❰ ᴏᴡɴᴇʀs ❱  
-├─ 🎮 [ᴏᴡɴᴇʀ: ɪʀᴏɴ ᴍᴀɴ](t.me/Iromanhindigaming) - [ʏᴏᴜᴛᴜʙᴇ](https://youtube.com/@ironmanhindigaming)  
+├─ 🎮 [ᴏᴡɴᴇʀ: ɪʀᴏɴ ᴍᴀɴ](t.me/Ironmanhindigaming) - [ʏᴏᴜᴛᴜʙᴇ](https://youtube.com/@ironmanhindigaming)  
 ├─ 🔥 [ᴄᴏ-ᴏᴡɴᴇʀ: ᴍᴀʀᴄᴏ](t.me/PAPA_CHIPS) - [ʏᴏᴜᴛᴜʙᴇ](https://youtube.com/@electro.gamer.99?s=si=fmpZQvOEpAVshPa7)  
 ╰───────────────  
 """
