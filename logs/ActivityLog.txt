@@ -1,3 +1,2 @@
 --- Activity for MOHD AAQIB ---
-2025-02-19 12:11:31 - Started bot Adlike.py
-2025-02-19 12:11:33 - Started bot Adlike.py
+2025-02-19 12:12:11 - Restarting bot Adlike.py
