@@ -251,7 +251,7 @@ def event(message):
             return
 
         region_code = command_parts[1]
-        api_url = f"https://ff-event-nine.vercel.app/events?region={region}"
+        api_url = f"https://ff-event-nine.vercel.app/events?region={ind'cis'pk'ru'bd"
 
         # Fetch the data from the API
         response = requests.get(api_url)
