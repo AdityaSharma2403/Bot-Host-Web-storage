@@ -155,7 +155,7 @@ def check_ban_status(message):
         parts = message.text.split()
         
         if len(parts) != 2:
-            bot.reply_to(message, "❌ Usage: /checkban <uid>", parse_mode="Markdown")
+            bot.reply_to(message, "❌ Usage: `checkban <uid>`", parse_mode="Markdown")
             return
 
         uid = parts[1]
