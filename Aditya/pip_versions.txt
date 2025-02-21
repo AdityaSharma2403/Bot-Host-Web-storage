@@ -1,0 +1,2 @@
+os: Not installed
+telebot: Not installed
