@@ -4,7 +4,7 @@ from io import BytesIO
 from PIL import Image
 
 # Replace with your bot token
-BOT_TOKEN = "7443226580:AAGcEoq1853TNtvM1WaHm03-5KTuCQANsUw"
+BOT_TOKEN = "7443226580:AAH-w9Ug_X7mWKGt6uQbmgAPIgsP7ZSPu0w"
 
 # Initialize bot
 bot = telebot.TeleBot(BOT_TOKEN)
