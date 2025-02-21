@@ -5,7 +5,6 @@ import requests
 BOT_TOKEN = 7216995759:AAHp12baiRWQQibUBuPRQj4vtCH15jpbRk4"
 
 # Initialize bot
-bot = telebot.TeleBot(BOT_TOKEN)
 
 # API Endpoints
 INFO_API = "https://ariiflexlabs-playerinfo.onrender.com/ff_info?uid={uid}&region={region}"
