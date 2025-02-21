@@ -3,6 +3,7 @@ import requests
 
 # Replace with your bot token
 BOT_TOKEN = '7216995759:AAHp12baiRWQQibUBuPRQj4vtCH15jpbRk4'
+
 bot = telebot.TeleBot(BOT_TOKEN)
 
 # Initialize bot
