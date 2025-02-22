@@ -1,0 +1,72 @@
+import telebot
+import requests
+
+# Replace with your bot token
+BOT_TOEN = '7216995759:AAHp12baiRWQQibUBuPRQj4vtCH15jpbRk4'
+
+bot = telebot.TeleBot(BOT_TOKEN)
+
+# Initialize bot
+
+# API Endpoints
+INFO_API = "https://ariiflexlabs-playerinfo.onrender.com/ff_info?uid={uid}&region={region}"
+VALID_REGIONS = ["ind", "sg", "br", "ru", "id", "tw", "us", "vn", "th", "me", "pk", "cis", "bd", "na"]
+
+@bot.message_handler(commands=['get'])
+@bot.message_handler(func=lambda message: message.text.lower().startswith("get"))
+def get_player_info(message):
+    try:
+        parts = message.text.split()
+
+        if len(parts) < 2:
+            bot.reply_to(message, "❌ *Usage:* `/get <region> <uid>` or `/get <uid>`", parse_mode="Markdown")
+            return
+
+        if len(parts) == 2:  # Only UID provided
+            uid = parts[1]
+            fetching_msg = bot.reply_to(message, f"⏳ *Fetching {uid} info for all regions...*", parse_mode="Markdown")
+            for region in VALID_REGIONS:
+                response = requests.get(INFO_API.format(uid=uid, region=region))
+                if response.status_code == 200 and "AccountInfo" in response.json():
+                    bot.delete_message(message.chat.id, fetching_msg.message_id)
+                    send_player_info(message, response.json(), uid, region)
+                    return
+            bot.edit_message_text("❌ *Invalid UID or no valid region found.*", message.chat.id, fetching_msg.message_id, parse_mode="Markdown")
+
+        elif len(parts) == 3:  # Region and UID provided
+            region, uid = parts[1].lower(), parts[2]
+            if region not in VALID_REGIONS:
+                bot.reply_to(message, "❌ *Invalid region. Use a valid region like:* `ind, sg, br, ru, etc.`", parse_mode="Markdown")
+                return
+
+            fetching_msg = bot.reply_to(message, f"⏳ *Fetching {uid} info for region: {region}...*", parse_mode="Markdown")
+            response = requests.get(INFO_API.format(uid=uid, region=region))
+            if response.status_code == 200 and "AccountInfo" in response.json():
+                bot.delete_message(message.chat.id, fetching_msg.message_id)
+                send_player_info(message, response.json(), uid, region)
+            else:
+                bot.edit_message_text("❌ *Invalid UID or region. Please try again.*", message.chat.id, fetching_msg.message_id, parse_mode="Markdown")
+
+    except Exception as e:
+        bot.reply_to(message, f"❌ *Error: {str(e)}*", parse_mode="Markdown")
+
+def send_player_info(message, data, uid, region):
+    """Formats and sends player info as a reply to the user."""
+    chat_id = message.chat.id
+    info = data["AccountInfo"]
+    msg = f"""
+╭─❰ 𝗕𝗔𝗦𝗜𝗖 𝗜𝗡𝗙𝗢 ❱
+│ 👤 Name: {info.get("AccountName", "N/A")}
+│ 🆔 UID: {uid}
+│ 🎮 Level: {info.get("AccountLevel", "N/A")}
+│ 🌍 Region: {region}
+│ 👍 Likes: {info.get("AccountLikes", "N/A")}
+│ 🎖️ Honor Score: {data.get("creditScoreInfo", {}).get("creditScore", "N/A")}
+│ 🔥 Evo Badge: {"Yes" if info.get("hasElitePass", False) else "No"}
+╰───────────────
+"""
+    bot.send_message(chat_id, msg, parse_mode="Markdown")
+
+# Start bot
+print("Bot is running...")
+bot.polling(none_stop=True)
